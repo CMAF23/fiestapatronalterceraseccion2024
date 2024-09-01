@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huitzo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'huitzo-brown': '#4a3610',
+                        'huitzo-gold': '#b8860b',
+                        'huitzo-light-gold': '#d4af37',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .navbar-gradient {
+            background: linear-gradient(90deg, #b8860b, #d4af37, #b8860b);
+            position: relative;
+            overflow: hidden;
+        }
+        .navbar-gradient::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+            animation: lightRotation 10s infinite linear;
+        }
+        @keyframes lightRotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-huitzo-brown text-white">
+    <header class="navbar-gradient text-huitzo-brown p-4 relative">
+        <nav class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold z-10 relative">HUITZO</h1>
+                <button id="menuToggle" class="lg:hidden z-10 relative">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="mobileMenu" class="hidden lg:flex lg:space-x-4 lg:justify-end mt-4 lg:mt-0 z-10 relative">
+                <li><a href="#" class="block py-2 hover:underline">INICIO</a></li>
+                <li><a href="#" class="block py-2 hover:underline">SEMANA CULTURAL</a></li>
+                <li><a href="#" class="block py-2 hover:underline">DÍAS MAS IMPORTANTES</a></li>
+                <li><a href="#" class="block py-2 hover:underline">HISTORIA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <section class="relative h-96 overflow-hidden rounded-lg shadow-xl">
+            <img src="./img/imagenprincipal.jpg" alt="Dancer" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h2 class="text-4xl font-bold text-white text-center">Celebrando nuestra cultura</h2>
+            </div>
+        </section>
+
+        <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                <img src="./img/icono_intercultural.png" alt="Convite Floral" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Convite Floral</h3>
+                <p class="text-sm">Los invitamos a ser parte del Convite Floral de la Tercera Sección de San Pablo Huitzo, una celebración llena de color, música y tradiciones que enaltecen nuestras raíces.</p>
+            </div>
+            <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                <img src="./img/icono_calles.png" alt="Calenda" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Calenda</h3>
+                <p class="text-sm">Los invitamos a unirse a la Calenda de la Tercera Sección de San Pablo Huitzo, una vibrante celebración que recorre nuestras calles con música, baile y alegría.</p>
+            </div>
+            <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                <img src="./img/icono_pueblo.png" alt="Celebración a lo grande" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Celebración a lo grande</h3>
+                <p class="text-sm">Están cordialmente invitados a la Fiesta Anual 2024 de la Tercera Sección de San Pablo Huitzo. Únanse a nosotros para celebrar nuestras tradiciones con música, baile y actividades que nos unen como comunidad.</p>
+            </div>
+            <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                <img src="./img/icono_dias.png" alt="Semana Cultural" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Semana Cultural</h3>
+                <p class="text-sm">Los invitamos a ser parte de nuestra Semana Cultural en la Tercera Sección de San Pablo Huitzo. Únanse a nosotros para disfrutar de eventos artísticos, talleres y presentaciones que celebran la riqueza de nuestra cultura.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-huitzo-gold text-huitzo-brown mt-12 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Huitzo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Ocultar el menú en pantallas grandes
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
