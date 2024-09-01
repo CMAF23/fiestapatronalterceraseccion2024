@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/quetzalcoatl.png
-">
-
-    <title>Huitzo</title>
+    <link rel="icon" href="../img/quetzalcoatl.png">
+    <title>Semana Cultural - Tercera Sección de San Pablo Huitzo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -41,6 +39,10 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .countdown {
+            font-size: 1.5em;
+            color: #007BFF;
+        }
     </style>
 </head>
 <body class="bg-huitzo-brown text-white">
@@ -55,9 +57,9 @@
                 </button>
             </div>
             <ul id="mobileMenu" class="hidden lg:flex lg:space-x-4 lg:justify-end mt-4 lg:mt-0 z-10 relative">
-                <li><a href="#" class="block py-2 hover:underline">INICIO</a></li>
+                <li><a href="../index.html" class="block py-2 hover:underline">INICIO</a></li>
                 <li><a href="progs/semanacultural.html" class="block py-2 hover:underline">SEMANA CULTURAL</a></li>
-                <li><a href="#" class="block py-2 hover:underline">DÍAS MAS IMPORTANTES</a></li>
+                <li><a href="#" class="block py-2 hover:underline">DÍAS MÁS IMPORTANTES</a></li>
                 <li><a href="#" class="block py-2 hover:underline">HISTORIA</a></li>
             </ul>
         </nav>
@@ -65,32 +67,42 @@
 
     <main class="container mx-auto mt-8">
         <section class="relative h-96 overflow-hidden rounded-lg shadow-xl">
-            <img src="./img/imagenprincipal.jpg" alt="Dancer" class="w-full h-full object-cover">
+            <img src="../img/icono_intercultural.png" alt="Dancer" class="w-full h-full object-cover" style="border-radius: 5%;">
             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <h2 class="text-4xl font-bold text-white text-center">Celebrando nuestra cultura</h2>
+            <h2 class="text-4xl font-bold text-white text-center">Semana Cultural 2024</h2>
             </div>
         </section>
 
-        <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
-                <img src="./img/icono_intercultural.png" alt="Convite Floral" class="w-full h-48 object-cover mb-4 rounded">
-                <h3 class="text-xl font-semibold mb-2">Convite Floral</h3>
-                <p class="text-sm">Los invitamos a ser parte del Convite Floral de la Tercera Sección de San Pablo Huitzo, una celebración llena de color, música y tradiciones que enaltecen nuestras raíces.</p>
+            <img src="../img/imgcanto.jpg" alt="Evento 1" class="mt-4" style="border-radius: 5%;">
+            <h3 class="text-xl font-semibold mb-2">Participación del Taller de Canto</h3>
+            <p>Fecha: 1 de Septiembre, 2024</p>
+            <div class="countdown" id="countdown1"></div>
             </div>
             <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
-                <img src="./img/icono_calles.png" alt="Calenda" class="w-full h-48 object-cover mb-4 rounded">
-                <h3 class="text-xl font-semibold mb-2">Calenda</h3>
-                <p class="text-sm">Los invitamos a unirse a la Calenda de la Tercera Sección de San Pablo Huitzo, una vibrante celebración que recorre nuestras calles con música, baile y alegría.</p>
+            <img src="../img/imgmarimba.jpg" alt="Evento 2" class="mt-4" style="border-radius: 5%;">
+            <h3 class="text-xl font-semibold mb-2">Presentación del Taller de Marimba</h3>
+            <p>Fecha: 2 de Septiembre, 2024</p>
+            <div class="countdown" id="countdown2"></div>
             </div>
             <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
-                <img src="./img/icono_pueblo.png" alt="Celebración a lo grande" class="w-full h-48 object-cover mb-4 rounded">
-                <h3 class="text-xl font-semibold mb-2">Celebración a lo grande</h3>
-                <p class="text-sm">Están cordialmente invitados a la Fiesta Anual 2024 de la Tercera Sección de San Pablo Huitzo. Únanse a nosotros para celebrar nuestras tradiciones con música, baile y actividades que nos unen como comunidad.</p>
+            <img src="../img/imgacrodanza.jpg" alt="Evento 3" class="mt-4" style="border-radius: 5%;">
+            <h3 class="text-xl font-semibold mb-2">Presentación del Taller de Piano y Acrodanza</h3>
+            <p>Fecha: 3 de Septiembre, 2024</p>
+            <div class="countdown" id="countdown3"></div>
             </div>
             <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
-                <img src="./img/icono_dias.png" alt="Semana Cultural" class="w-full h-48 object-cover mb-4 rounded">
-                <h3 class="text-xl font-semibold mb-2">Semana Cultural</h3>
-                <p class="text-sm">Los invitamos a ser parte de nuestra Semana Cultural en la Tercera Sección de San Pablo Huitzo. Únanse a nosotros para disfrutar de eventos artísticos, talleres y presentaciones que celebran la riqueza de nuestra cultura.</p>
+            <img src="../img/imgensamble.jpg" alt="Evento 4" class="mt-4" style="border-radius: 5%;">
+            <h3 class="text-xl font-semibold mb-2">Participacion del Taller de Ensambl</h3>
+            <p>Fecha: 4 de Septiembre, 2024</p>
+            <div class="countdown" id="countdown4"></div>
+            </div>
+            <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+            <img src="../img/imgfinal.jpg" alt="Evento 5" class="mt-4" style="border-radius: 5%;">
+            <h3 class="text-xl font-semibold mb-2">Presentación final de la Semana Cultural</h3>
+            <p>Fecha: 5 de Septiembre, 2024</p>
+            <div class="countdown" id="countdown5"></div>
             </div>
         </section>
     </main>
@@ -117,6 +129,36 @@
                 mobileMenu.classList.add('hidden');
             }
         });
+
+        // Función para inicializar el cronómetro
+        function initializeCountdown(elementId, eventDate) {
+            const countdownElement = document.getElementById(elementId);
+            const countDownDate = new Date(eventDate).getTime();
+
+            const countdownFunction = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+                if (distance < 0) {
+                    clearInterval(countdownFunction);
+                    countdownElement.innerHTML = "¡El evento ha comenzado!";
+                }
+            }, 1000);
+        }
+
+        // Inicializar cronómetros para cada evento
+        initializeCountdown("countdown1", "Sep 1, 2024 10:00:00");
+        initializeCountdown("countdown2", "Sep 2, 2024 14:00:00");
+        initializeCountdown("countdown3", "Sep 3, 2024 16:00:00");
+        initializeCountdown("countdown4", "Sep 4, 2024 19:00:00");
+        initializeCountdown("countdown5", "Sep 5, 2024 18:00:00");
     </script>
 </body>
 </html>
