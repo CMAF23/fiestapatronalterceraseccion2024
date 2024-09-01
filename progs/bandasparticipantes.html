@@ -19,6 +19,7 @@
             }
         }
     </script>
+    
     <style>
         .navbar-gradient {
             background: linear-gradient(90deg, #b8860b, #d4af37, #b8860b);
@@ -43,6 +44,17 @@
             font-size: 1.5em;
             color: #007BFF;
         }
+        .menu-item {
+            display: block;
+            padding: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 <body class="bg-huitzo-brown text-white">
@@ -50,6 +62,7 @@
         <nav class="container mx-auto">
             <div class="flex justify-between items-center">
                 <h1 class="text-3xl font-bold z-10 relative">HUITZO</h1>
+
                 <button id="menuToggle" class="lg:hidden z-10 relative">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -57,36 +70,39 @@
                 </button>
             </div>
             <ul id="mobileMenu" class="hidden lg:flex lg:space-x-4 lg:justify-end mt-4 lg:mt-0 z-10 relative">
-                <li><a href="../index.html" class="block py-2 hover:underline">INICIO</a></li>
-                <li><a href="semanacultural.html" class="block py-2 hover:underline">SEMANA CULTURAL</a></li>
-                <li><a href="#" class="block py-2 hover:underline">EVENTOS SOCIALES</a></li>
-                <li><a href="#" class="block py-2 hover:underline">BANDAS PARTICIPANTES</a></li>
+                <li><a href="../index.html" class="menu-item py-2 hover:underline">INICIO</a></li>
+                <li><a href="semanacultural.html" class="menu-item py-2 hover:underline">SEMANA CULTURAL</a></li>
+                <li><a href="#" class="menu-item py-2 hover:underline">EVENTOS SOCIALES</a></li>
+                <li><a href="bandasparticipantes.html" class="menu-item py-2 hover:underline active">BANDAS PARTICIPANTES</a></li>
                 <li><p class="opacity-50">Por Familia - Acevedo Flores - Flores Cruz -</p></li>
             </ul>
         </nav>
+        
     </header>
-    <div>
-        <h2 class="text-3xl font-bold text-center">Los Alidos de La Banda</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/78yzYMd6BhQwxa9K7cy5wq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
+    <section>
+        <div>
+            <h2 class="text-3xl font-bold text-center">Los Alidos de La Banda</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/78yzYMd6BhQwxa9K7cy5wq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    
+        <div>
+            <h2 class="text-3xl font-bold text-center">Banda Trakatera</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6snPO18aK3AKNx3XhEXJcI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold text-center">Banda Real Antequera</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FnoXEMDUXfijlHy82BiKE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold text-center">La Reyna de México</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/570EXmH9ADUNVi2CXhCtyY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+    
+        </div>
+    </section>
 
-    <div>
-        <h2 class="text-3xl font-bold text-center">Banda Trakatera</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6snPO18aK3AKNx3XhEXJcI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <div>
-        <h2 class="text-3xl font-bold text-center">Banda Real Antequera</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FnoXEMDUXfijlHy82BiKE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <div>
-        <h2 class="text-3xl font-bold text-center">La Reyna de México</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/570EXmH9ADUNVi2CXhCtyY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <div>
 
-    </div>
-
-   
 
     <footer class="bg-huitzo-gold text-huitzo-brown mt-12 py-6">
         <div class="container mx-auto text-center">
@@ -94,5 +110,15 @@
         </div>
     </footer>
 
+    <script>
+        // Función para alternar el menú móvil
+        function toggleMenu() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        // Asignar el evento al botón de menú
+        document.getElementById("menuToggle").addEventListener("click", toggleMenu);
+    </script>
 </body>
 </html>
