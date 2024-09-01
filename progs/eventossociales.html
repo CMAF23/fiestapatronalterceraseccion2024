@@ -109,6 +109,34 @@
             <p>22:00 hrs</p>
             <div class="countdown" id="countdown5"></div>
             </div>
+            <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                <img src="../img/imagencomida.jpg" alt="Evento 5" class="mt-4" style="border-radius: 5%;">
+                <h3 class="text-xl font-semibold mb-2">Comida</h3>
+                <p>Fecha: 8 de Septiembre, 2024</p>
+                <p>14:00 hrs</p>
+                <div class="countdown" id="countdown6"></div>
+                </div>
+                <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                    <img src="../img/imagenjaripeo.JPG" alt="Evento 5" class="mt-4" style="border-radius: 5%;">
+                    <h3 class="text-xl font-semibold mb-2">Jaripeo</h3>
+                    <p>Fecha: 8 de Septiembre, 2024</p>
+                    <p>19:00 hrs</p>
+                    <div class="countdown" id="countdown7"></div>
+                    </div>
+                    <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                        <img src="../img/imagenjaripeo2.jpeg" alt="Evento 5" class="mt-4" style="border-radius: 5%;">
+                        <h3 class="text-xl font-semibold mb-2">Jaripeo</h3>
+                        <p>Fecha: 9 de Septiembre, 2024</p>
+                        <p>18:00 hrs</p>
+                        <div class="countdown" id="countdown8"></div>
+                        </div>
+                        <div class="bg-white text-huitzo-brown p-6 rounded-lg shadow-md transition-transform hover:scale-105">
+                            <img src="../img/imagenjaripeo3.jpeg" alt="Evento 5" class="mt-4" style="border-radius: 5%;">
+                            <h3 class="text-xl font-semibold mb-2">Jaripeo</h3>
+                            <p>Fecha: 9 de Septiembre, 2024</p>
+                            <p>18:00 hrs</p>
+                            <div class="countdown" id="countdown9"></div>
+                            </div>
         </section>
     </main>
 
@@ -142,6 +170,7 @@
 
             const countdownFunction = setInterval(function () {
                 const now = new Date().getTime();
+
                 const distance = countDownDate - now;
 
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -164,6 +193,10 @@
         initializeCountdown("countdown3", "Sep 7, 2024 07:30:00");
         initializeCountdown("countdown4", "Sep 7, 2024 21:00:00");
         initializeCountdown("countdown5", "Sep 7, 2024 22:00:00");
+        initializeCountdown("countdown6", "Sep 8, 2024 14:00:00");
+        initializeCountdown("countdown7", "Sep 8, 2024 19:00:00");
+        initializeCountdown("countdown8", "Sep 9, 2024 18:00:00");
+        initializeCountdown("countdown9", "Sep 15, 2024 18:00:00");
     </script>
 </body>
 </html>
