@@ -40,10 +40,6 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        .countdown {
-            font-size: 1.5em;
-            color: #007BFF;
-        }
         .menu-item {
             display: block;
             padding: 0.5rem;
@@ -63,16 +59,16 @@
             <div class="flex justify-between items-center">
                 <h1 class="text-3xl font-bold z-10 relative">HUITZO</h1>
 
-                <button id="menuToggle" class="lg:hidden z-10 relative">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <button id="menuToggle" class="lg:hidden z-10 relative focus:outline-none">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
             <ul id="mobileMenu" class="hidden lg:flex lg:space-x-4 lg:justify-end mt-4 lg:mt-0 z-10 relative">
                 <li><a href="../index.html" class="menu-item py-2 hover:underline">INICIO</a></li>
                 <li><a href="semanacultural.html" class="menu-item py-2 hover:underline">SEMANA CULTURAL</a></li>
-                <li><a href="eventossociales.html" class="menu-item py-2 hover:underline">EVENTOS SOCIALES</a></li>
+                <li><a href="#" class="menu-item py-2 hover:underline">EVENTOS SOCIALES</a></li>
                 <li><a href="bandasparticipantes.html" class="menu-item py-2 hover:underline active">BANDAS PARTICIPANTES</a></li>
                 <li><p class="opacity-50">Por Familia - Acevedo Flores - Flores Cruz -</p></li>
             </ul>
@@ -101,8 +97,6 @@
     
         </div>
     </section>
-
-
 
     <footer class="bg-huitzo-gold text-huitzo-brown mt-12 py-6">
         <div class="container mx-auto text-center">
